@@ -35,3 +35,44 @@ setInterval(function() {
     // Move to the next index, or loop back to the first one
     currentIndex = (currentIndex + 1) % texts.length;
 }, 3000); // 15000 milliseconds = 15 seconds
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const logButton = document.getElementById("log");
+    const signButton = document.getElementById("sign");
+    const formContent = document.getElementById("form-content");
+
+    logButton.addEventListener("click", function() {
+        formContent.innerHTML = `
+            <div class="input-group">
+                <label for="username" id="username-label">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+            </div>
+            <div class="input-group">
+                <label for="password" id="password-label">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+        `;
+    });
+
+    signButton.addEventListener("click", function() {
+        formContent.innerHTML = `
+            <div class="input-group">
+                <label for="firstname" id="firstname-label">First Name</label>
+                <input type="text" id="firstname" name="firstname" placeholder="First Name">
+            </div>
+            <div class="input-group">
+                <label for="lastname" id="lastname-label">Last Name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+            </div>
+            <div class="input-group">
+                <label for="password" id="password-label">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <div class="input-group">
+                <label for="confirmpassword" id="confirmpassword-label">Confirm Password</label>
+                <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password">
+            </div>
+        `;
+    });
+});

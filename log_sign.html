@@ -7,24 +7,19 @@
     <title>LogIn and SignUp</title>
 </head>
 <body class="form-body">
-    
-        
-    
-    <form class="register">
-        <div class="top--buttons">
-            <button class="log move" id="log">LogIn</button>
-            <button class="sign  move">SignUp</button>
+    <form class="register" id="form">
+        <div class="top-buttons">
+            <button type="button" class="log move" id="log">LogIn</button>
+            <button type="button" class="sign move" id="sign">SignUp</button>
         </div>
-        <div>
-            <label for="jina" id="name">Name</label>
-            <input type="text" name="jina" placeholder="Name">
+        <div id="form-content">
+            <!-- Content will be dynamically replaced based on button click in index.js -->
         </div>
-        <div>
-            <label for="pass" id="pass">Name</label>
-            <input type="password" name="pass" placeholder="Password">
-        </div>
-
-        <button class="move" id="submit">Submit</button>
+        <button type="submit" class="move" id="submit">Submit</button>
     </form>
+
+    <a href="index.html" class="home-button">Home</a>
+
+    <script src="index.js"></script>
 </body>
 </html>
