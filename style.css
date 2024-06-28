@@ -131,3 +131,53 @@ font-size: 60px;
     border-radius: 10px;
     border-radius: 80% 31% 69% / 30% 34% 66% 70% ;
 }
+.form-body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #132A13;
+}
+.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #4F772D;
+    height: 500px;
+    width: 500px;
+    border-radius:20px ;
+    position: absolute;
+}
+
+.register label{
+    display: block;
+    margin: 9px;
+    color: #9dc183;
+}
+.register input{
+    border:2px solid #4F772D;
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+}
+.move{
+    margin: 20px;
+    background: linear-gradient(to right, #31572c, #4F772D);
+    width:150px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 5px #000;
+}
+.top--buttons{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.top--buttons:hover{
+    background-color: transparent;
+    border-bottom: 2px solid #4F772D;
+}
